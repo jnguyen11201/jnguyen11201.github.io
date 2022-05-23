@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>G-Shock: Variants</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+</head>
+
+<style>
+  body {
+    background-color: black
+  }
+  h5 {
+    color: white;
+    font-family: 'Oswald';
+    text-shadow:2px 2px 4px black;
+  }
+  p {
+    color: white;
+    font-family: 'Oswald';
+    text-shadow:2px 2px 4px black;
+  }
+  @keyframes drop-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade1 {
+    animation: drop-in 1500ms;
+  }
+  .btn-outline-secondary {
+    color: white;
+    font-family: 'Oswald';
+  }
+  img {
+    max-width: 30%;
+    height: auto;
+    margin:auto;
+  }
+}
+</style>  
+<body>
+  <div class="fade1 py-5">
+    <div id="carousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pics/dw5000.png" class="d-block w-100" alt="DW-5000C (1983)">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>DW-5000C (1983)</h5>
+            <p>The first G-Shock ever released.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pics/dw5700.png" class="d-block w-100" alt="DW-5700 (1987)">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>DW-5700 (1987)</h5>
+            <p>The first round G-Shock.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pics/dw5600e.png" class="d-block w-100" alt="DW-5600E (1996)">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>DW-5600E (1996)</h5>
+            <p>Electro-luminescent backlight. Can still be purchased today.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="pics/m5610.png" class="d-block w-100" alt="GW-M5610 (2012)">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>GW-M5610 (2012)</h5>
+            <p>Multi-Band 6 Atomic Time-keeping. Solar-powered.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="pics/b5000d.png" class="d-block w-100" alt="GMW-B5000D (2018)">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>GMW-B5000D (2018)</h5>
+            <p>First "square" G-Shock to have a stainless-steel outer case.</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br>
+
+    <div class="col-lg-6 mx-auto">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a class="btn btn-outline-secondary btn-lg px-4" href="home.html" role="button">HOME</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>G-Shock: Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  </head>
+
+<style>
+body {
+background-color: black
+}
+h1 {
+  color: white;
+}
+ @keyframes drop-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade1 {
+    animation: drop-in 1500ms;
+  }
+
+  .display-4 {
+  font-family: 'Oswald';
+
+  }
+
+.btn-outline-secondary {
+  color: white;
+  font-family: 'Oswald';
+}
+</style>  
+
+<script>
+function resetImage(){
+     document.getElementById("DW5600e").src = "pics/gshock&logo.jpg";
+}
+function EL() {      
+  {
+     document.getElementById("DW5600e").src = "pics/gshock&logoEL.jpg";
+  }
+  setTimeout(function(){
+     resetImage();
+  }, 1500)
+}
+</script> 
+
+<body>
+
+<div class="px-4 pt-5 my-5 text-center">
+      <div class="container px-5">
+        <div class= "fade1"> 
+        <img id="DW5600e" src="pics/gshock&logo.jpg" class="img-fluid" alt="G-Shock" style="width:40%;height:auto;" loading="lazy"
+        onClick="setTimeout(EL,0);">
+        </div>
+      </div>
+
+    <div class= "fade1"> <h1 class="display-4 fw-bold">DW5600E</h1></div>
+    <br>
+    <div class="col-lg-6 mx-auto">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <div class= "fade1">
+          <a class="btn btn-outline-secondary btn-lg px-4" href="history.html" role="button">HISTORY</a>
+          <a class="btn btn-outline-secondary btn-lg px-4" href="features.html" role="button">FEATURES</a>
+          <a class="btn btn-outline-secondary btn-lg px-4" href="variants.html" role="button">VARIANTS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  </body>
+</html>
